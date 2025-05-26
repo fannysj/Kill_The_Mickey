@@ -1,11 +1,6 @@
 extends Node
 
-@onready var label = get_node("../Player/DeathCounterLabel")
 var deaths = 0
-
-func _process(delta):
-	label.text = "Deaths: %d" % MultiplayerManager.deaths
-
 
 func become_host() -> void:
 	print("you clicked become host")
